@@ -16,7 +16,7 @@ client.on('message', function(message) {
           message.delete(5000);
         });
     } else if(message.content.startsWith(prefix + "st")) {
-                if(message.author.id !== myID) return;
+                if(message.author.id !== 509026180020699195) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setGame(args , 'https://twitch.tv/6xlez1');
         message.channel.send('**Streaming,Done!🎶**').then(msg => {
@@ -24,7 +24,7 @@ client.on('message', function(message) {
           message.delete(5000);
         });
     } else if(message.content.startsWith(prefix + "p")) {
-                        if(message.author.id !== myID) return;
+                        if(message.author.id !== 509026180020699195) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setGame(args);
         message.channel.send('**Playing,Done!🎶**').then(msg => {
@@ -32,7 +32,7 @@ client.on('message', function(message) {
           message.delete(5000);
         });
     } else if(message.content.startsWith(prefix + "l")) {
-                        if(message.author.id !== myID) return;
+                        if(message.author.id !== 509026180020699195) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setActivity(args, {type:'LISTENING'});
         message.channel.send('**Listening,Done!🎶**').then(msg => {
@@ -40,7 +40,7 @@ client.on('message', function(message) {
           message.delete(5000);
         });
     } else if(message.content.startsWith(prefix + "w")) {
-                        if(message.author.id !== myID) return;
+                        if(message.author.id !== 509026180020699195) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setActivity(args, {type:'WATCHING'});
         message.channel.send('**Watching,Done!🎶**').then(msg => {
@@ -48,7 +48,7 @@ client.on('message', function(message) {
           message.delete(5000);
         });
     } else if(message.content.startsWith(prefix + "setavatar")) {
-                        if(message.author.id !== myID) return;
+                        if(message.author.id !== 509026180020699195) return;
         client.user.setAvatar(args);
         message.channel.send(':white_check_mark: Done!').then(msg => {
                 if(!args) return message.reply('اكتب الحالة اللي تريدها.');
